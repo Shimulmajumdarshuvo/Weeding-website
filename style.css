@@ -1,0 +1,177 @@
+body {
+    margin: 0;
+    font-style: italic;
+    font-weight: 900;
+
+}
+
+.headerPart {
+    background-color: brown;
+    margin: 50px;
+    border-radius: 34px;
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 150px;
+}
+
+.sliderPart {
+    background-color: white;
+    margin: 120px;
+    border: 1px solid rgba(0, 0, 0, 0.747);
+    border-radius: 30px;
+    transform: translateY(-220px);
+}
+
+.mainParts {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+
+}
+
+.img {
+
+    height: 450px;
+    padding-left: 60px;
+    padding-top: 30px;
+    padding-right: 30px;
+
+}
+
+button {
+    border: 1px solid wheat;
+    padding: 10px 20px;
+    border-radius: 12px;
+    font-size: 25px;
+    border: none;
+    color: white;
+    background-color: black;
+}
+
+.mainSection {
+    padding: 34px;
+
+}
+
+.mainSection h1 {
+    padding-top: 40px;
+}
+
+del {
+    font-size: 20px;
+    padding-right: 25px;
+
+}
+
+span {
+    color: rgb(40, 192, 60);
+}
+
+.feature {
+    background-color: white;
+    margin: 120px;
+    border: 1px solid rgba(0, 0, 0, 0.747);
+    border-radius: 30px;
+    transform: translateY(-220px);
+}
+
+.cardStyle {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    grid-gap: 18px;
+
+    text-align: center;
+
+}
+
+.card {
+    text-align: center;
+}
+
+.card img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin-left: 80px;
+}
+
+.card p {
+    padding: 5px 10px;
+}
+
+
+
+
+
+
+/* Responsive section start  */
+@media only screen and (max-width:890px) {
+    .cardStyle {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .card img {
+        margin-left: 30px;
+    }
+
+    .mainParts {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .mainSection h1 {
+        padding-top: 0;
+    }
+
+    .img {
+
+
+        padding-left: 20px;
+        padding-top: 10px;
+        padding-right: 10px;
+
+    }
+
+
+
+}
+
+@media only screen and (max-width:600px) {
+    .cardStyle {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+
+    }
+
+    .card {
+        text-align: center;
+    }
+
+
+
+    .mainSection {
+        transform: translateY(-220px);
+    }
+
+
+    .cardStyle {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+
+
+    }
+
+
+
+
+
+}
+
+/* Responsive section End  */
